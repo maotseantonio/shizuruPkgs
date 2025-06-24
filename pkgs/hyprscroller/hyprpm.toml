@@ -1,0 +1,16 @@
+[repository]
+name = "hyprscroller"
+authors = ["dawser","cpiber"]
+commit_pins = [
+    ["84ab8d11e8951a6551d1e1bf87796a8589da6d47", "7038ece24a53f98d6d4eef9759646261ee3fa07b"],
+    ["918d8340afd652b011b937d29d5eea0be08467f5", "4121019cde46c80fce78cf985a4bb8a04f74712e"],
+    ["9958d297641b5c84dcff93f9039d80a5ad37ab00", "0ef2592d2bdb20676b7434461e60f272b3e462e3"]
+]
+
+[hyprscroller]
+description = "A plugin providing a scrolling layout, inspired by PaperWM"
+authors = ["dawser"]
+build = [
+    "make release",
+]
+output = "hyprscroller.so"
