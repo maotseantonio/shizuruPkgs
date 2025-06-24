@@ -50,4 +50,13 @@ inputs.shizuruPkgs.url = "github:maotseantonio/shizuruPkgs";
     inputs.shizuruPkgs.${pkgs.system}.sddm-stray
   ];
 }
+```
+---
 
+## 🎖️ Credits
+
+Thanks to these amazing projects and contributors for inspiration and code. The kofi link is not mine for the original creator:
+
+- **Catppuccin Icons** by [ljmill](https://github.com/ljmill/catppuccin-icons)  
+- **sddm-stray** by [Bqrry4](https://github.com/Bqrry4/sddm-stray)  
+- **Kureiji Ollie Cursor** supported via [Ko-fi](https://ko-fi.com/s/0f16e071d4)  
