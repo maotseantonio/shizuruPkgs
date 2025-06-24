@@ -16,4 +16,10 @@
   sddm-stray = import ./sddm-stray {
     inherit pkgs lib;
   };
+  nitch = import ./nitch {
+    inherit pkgs lib;
+  };
+  rxfetch = import ./rxfetch {
+     inherit pkgs lib;
+  };
 }

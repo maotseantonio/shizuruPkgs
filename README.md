@@ -1,4 +1,4 @@
-# 🚀 My Nix Packages Mono Repo
+# 🚀 My Nix Packages For Themeing(Mono Repo)
 
 Welcome to my personal **Nix flake mono repository**!  
 This repo contains multiple custom Nix packages & derivations that I maintain and use across my systems.
@@ -14,15 +14,16 @@ This repo contains multiple custom Nix packages & derivations that I maintain an
 
 ## 🔧 Included Packages
 
-| Package             | Description                                | Status          | Repo / Docs                              |
-|---------------------|--------------------------------------------|-----------------|-----------------------------------------|
-| 🎨 **catppuccin-icons**     | Beautiful Catppuccin icon theme               | ![Stable](https://img.shields.io/badge/status-stable-brightgreen) | [GitHub](https://github.com/maotseantonio/catppuccin-icons) |
-| 🖱️ **kureiji-ollie-cursors** | Custom Kureiji Ollie cursor theme               | ![Stable](https://img.shields.io/badge/status-stable-brightgreen) | [GitHub](https://github.com/maotseantonio/Kureiji-Ollie-Cursors) |
-| 💻 **hyprscroller**           | Hyprland layout plugin — smooth scrolling layouts | ![Beta](https://img.shields.io/badge/status-beta-yellow)         | [GitHub](https://github.com/maotseantonio/hyprscroller)       |
-| 🔥 **sddm-stray**             | SDDM tray and theme helper                       | ![Alpha](https://img.shields.io/badge/status-alpha-red)          | [GitHub](https://github.com/maotseantonio/sddm-stray-flakes)   |
+| Package                   | Description                                          | Status                                            | Repo / Docs                                        |
+|---------------------------|------------------------------------------------------|---------------------------------------------------|---------------------------------------------------|
+| 🎨 **catppuccin-icons**        | Beautiful Catppuccin icon theme                       | ![Stable](https://img.shields.io/badge/status-stable-brightgreen) | [GitHub](https://github.com/maotseantonio/catppuccin-icons)       |
+| 🖱️ **kureiji-ollie-cursors**  | Custom Kureiji Ollie cursor theme                     | ![Stable](https://img.shields.io/badge/status-stable-brightgreen) | [GitHub](https://github.com/maotseantonio/Kureiji-Ollie-Cursors)  |
+| 💻 **hyprscroller**            | Hyprland layout plugin — smooth scrolling layouts     | ![Beta](https://img.shields.io/badge/status-beta-yellow)         | [GitHub](https://github.com/maotseantonio/hyprscroller)           |
+| 🔥 **sddm-stray**              | SDDM tray and theme helper                           | ![Alpha](https://img.shields.io/badge/status-alpha-red)          | [GitHub](https://github.com/maotseantonio/sddm-stray-flakes)      |
+| 📟 **rxfetch**                 | Fast, minimal system fetch with style                | ![Beta](https://img.shields.io/badge/status-beta-yellow)         | [GitHub](https://github.com/mngshm/rxfetch.git)                |
+| 🌿 **nitch**                   | Minimal Nix-based system information fetch tool      | ![Stable](https://img.shields.io/badge/status-stable-brightgreen) | [GitHub](https://github.com/ssleert/nitch.git)                  |
 
 ---
-
 ## 🖼️ Showcase (Rice Photos)
 
 ### Catppuccin Icons  
@@ -33,6 +34,12 @@ This repo contains multiple custom Nix packages & derivations that I maintain an
 
 ### sddm-stray-theme  
 ![sddm stray theme](./assets/preview.gif)
+
+### nitch 
+![nitch](./assets/nitch.png)
+
+### rxfetch
+![rxfetch](./assets/rxfetch.png)
 
 ---
 
@@ -45,9 +52,9 @@ inputs.shizuruPkgs.url = "github:maotseantonio/shizuruPkgs";
 
 {
   environment.systemPackages = with pkgs; [
-    inputs.shizuruPkgs.${pkgs.system}.catppuccin-icons
-    inputs.shizuruPkgs.${pkgs.system}.kureiji-ollie-cursors
-    inputs.shizuruPkgs.${pkgs.system}.sddm-stray
+    inputs.shizuruPkgs.packages.${pkgs.system}.catppuccin-icons
+    inputs.shizuruPkgs.packages.${pkgs.system}.kureiji-ollie-cursors
+    inputs.shizuruPkgs.packages.${pkgs.system}.sddm-stray
   ];
 }
 ```
