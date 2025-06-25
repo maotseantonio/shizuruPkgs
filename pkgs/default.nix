@@ -22,4 +22,7 @@
   rxfetch = import ./rxfetch {
      inherit pkgs lib;
   };
+  gtk-themes = import ./gtk-themes {
+    inherit pkgs lib;
+  };
 }
