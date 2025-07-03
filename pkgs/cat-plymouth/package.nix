@@ -1,25 +1,47 @@
-{ stdenv, fetchFromGitHub, plymouth }:
+{ stdenvNoCC
+, lib
+, fetchFromGitHub
+, unstableGitUpdater
+}:
 
-stdenv.mkDerivation {
-  pname = "plymouth-catppuccin-mocha";
-  version = "2024-03-12"; # You can update this as needed
+let
+  pname = "plymouth-catppuccin-mocha-mod";
+  version = "2024-03-12";
+  themeName = "catppuccin-mocha-mod";
+in
+
+stdenvNoCC.mkDerivation {
+  inherit pname version;
 
   src = fetchFromGitHub {
     owner = "maotseantonio";
     repo = "cat-plymouth";
-    rev = "f9691a4b89c16c058ddf5087a11bf6556514cf18";
-    hash = "sha256-aPK/WOcydCturZ04datxOfNxTTr3qEQJS5oV+4IHAhc=";
+    rev = "376e1af49591cc1f7f4f84e989353c2c47e1955c";
+    hash = "sha256-JYBuN38eD06oUSmrMJHPaHUB8MJUu9HJe8CwaMrgJ88=";
   };
 
+  # Adjust sourceRoot if your themes are inside a subfolder; else omit or adjust
+  sourceRoot = "source/${themeName}";
+
   installPhase = ''
-    mkdir -p $out/share/plymouth/themes/catppuccin-mocha-mod
-    cp -r * $out/share/plymouth/themes/catppuccin-mocha-mod
+    runHook preInstall
+
+    # Patch ImageDir to $out path
+    sed -i "s|^ImageDir=.*$|ImageDir=$out/share/plymouth/themes/${themeName}|" ${themeName}.plymouth
+
+    mkdir -p $out/share/plymouth/themes/${themeName}
+    cp -r * $out/share/plymouth/themes/${themeName}
+
+    runHook postInstall
   '';
 
-  meta = with stdenv.lib; {
-    description = "Catppuccin Mocha Plymouth theme from maotseantonio/cat-plymouth";
+  passthru.updateScript = unstableGitUpdater { };
+
+  meta = {
+    description = "Catppuccin Mocha Mod Plymouth theme by maotseantonio";
     homepage = "https://github.com/maotseantonio/cat-plymouth";
-    license = licenses.mit; # Adjust if your repo uses a different license
-    platforms = platforms.linux;
+    license = lib.licenses.mit;
+    platforms = lib.platforms.linux;
+    maintainers = with lib.maintainers; [ ];
   };
 }
