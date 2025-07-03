@@ -25,4 +25,7 @@
   gtk-themes = import ./gtk-themes {
     inherit pkgs lib;
   };
+  cat-plymouth = import ./cat-plymouth {
+    inherit pkgs lib;
+  };
 }
