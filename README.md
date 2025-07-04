@@ -22,7 +22,6 @@ This repo contains multiple custom Nix packages & derivations that I maintain an
 | 🎨 **cat-plymouth**            | Catppuccin Plymouth Theme —  Modify Version     | ![Beta](https://img.shields.io/badge/status-stable-brightgreen)         | [GitHub](https://github.com/maotseantonio/cat-plymouth)           |
  🔥 **sddm-stray**              | SDDM tray and theme helper                           | ![Alpha](https://img.shields.io/badge/status-alpha-red)          | [GitHub](https://github.com/maotseantonio/sddm-stray-flakes)      |
 | 💻 **Houdoku**            | Houdoku Manga Reader —  Appimage Version        | ![Beta](https://img.shields.io/badge/status-beta-yellow)         | [GitHub](https://github.com/maotseantonio/hyprscroller)           |
-|
 | 📟 **rxfetch**                 | Fast, minimal system fetch with style                | ![Beta](https://img.shields.io/badge/status-beta-yellow)         | [GitHub](https://github.com/mngshm/rxfetch.git)                |
 | 🌿 **nitch**                   | Minimal Nix-based system information fetch tool      | ![Stable](https://img.shields.io/badge/status-stable-brightgreen) | [GitHub](https://github.com/ssleert/nitch.git)                  |
 
