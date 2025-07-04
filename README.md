@@ -19,8 +19,10 @@ This repo contains multiple custom Nix packages & derivations that I maintain an
 | 🎨 **catppuccin-icons**        | Beautiful Catppuccin icon theme                       | ![Stable](https://img.shields.io/badge/status-stable-brightgreen) | [GitHub](https://github.com/maotseantonio/catppuccin-icons)       |
 | 🖱️ **kureiji-ollie-cursors**  | Custom Kureiji Ollie cursor theme                     | ![Stable](https://img.shields.io/badge/status-stable-brightgreen) | [GitHub](https://github.com/maotseantonio/Kureiji-Ollie-Cursors)  |
 | 💻 **hyprscroller**            | Hyprland layout plugin — smooth scrolling layouts     | ![Beta](https://img.shields.io/badge/status-beta-yellow)         | [GitHub](https://github.com/maotseantonio/hyprscroller)           |
-| 💻 **cat-plymouth**            | Catppuccin Plymouth Theme —  Modify Version     | ![Beta](https://img.shields.io/badge/status-stable-brightgreen)         | [GitHub](https://github.com/maotseantonio/cat-plymouth)           |
+| 🎨 **cat-plymouth**            | Catppuccin Plymouth Theme —  Modify Version     | ![Beta](https://img.shields.io/badge/status-stable-brightgreen)         | [GitHub](https://github.com/maotseantonio/cat-plymouth)           |
  🔥 **sddm-stray**              | SDDM tray and theme helper                           | ![Alpha](https://img.shields.io/badge/status-alpha-red)          | [GitHub](https://github.com/maotseantonio/sddm-stray-flakes)      |
+| 💻 **Houdoku**            | Houdoku Manga Reader —  Appimage Version        | ![Beta](https://img.shields.io/badge/status-beta-yellow)         | [GitHub](https://github.com/maotseantonio/hyprscroller)           |
+|
 | 📟 **rxfetch**                 | Fast, minimal system fetch with style                | ![Beta](https://img.shields.io/badge/status-beta-yellow)         | [GitHub](https://github.com/mngshm/rxfetch.git)                |
 | 🌿 **nitch**                   | Minimal Nix-based system information fetch tool      | ![Stable](https://img.shields.io/badge/status-stable-brightgreen) | [GitHub](https://github.com/ssleert/nitch.git)                  |
 
@@ -45,6 +47,9 @@ This repo contains multiple custom Nix packages & derivations that I maintain an
 ### cat-plymouth
 ![cat-plymouth](./assets/plymouth.gif)
 
+
+### Houdoku(Appimage Version)
+![Houdoku](./assets/houdoku.png)
 
 ---
 
