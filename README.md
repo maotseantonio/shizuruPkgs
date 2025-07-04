@@ -6,6 +6,13 @@ This repo contains multiple custom Nix packages & derivations that I maintain an
 ## ⚠️ Disclaimer about `hyprscroller`
 
 > **Important:**  
+> The `Houdoku` package in this repo directly download from houdoku official v2.16.0 **Why i do not use the fetchfromgithub with their source repo, i want to add the application icon for my derivation**.  
+> I make this repo and packages is for my personal use and there is anywhere i cant find this packages.if you want to support plz go and give the original creator. i am just the stealer for my needs:  
+> [https://github.com/xgi/houdoku](https://github.com/xgi/houdoku)
+
+
+
+> **Important:**  
 > The `hyprscroller` package in this repo currently **does not work properly**.  
 > Please use the original maintained version here instead:  
 > [https://github.com/cpiber/hyprscroller](https://github.com/cpiber/hyprscroller)
@@ -73,6 +80,7 @@ inputs.shizuruPkgs.url = "github:maotseantonio/shizuruPkgs";
 
 Thanks to these amazing projects and contributors for inspiration and code. The kofi link is not mine for the original creator:
 
+- **Houdoku(Manga Reader)** by [xgi](https://github.com/xgi/houdoku)  
 - **Catppuccin Icons** by [ljmill](https://github.com/ljmill/catppuccin-icons)  
 - **sddm-stray** by [Bqrry4](https://github.com/Bqrry4/sddm-stray)  
 - **Kureiji Ollie Cursor** supported via [Ko-fi](https://ko-fi.com/s/0f16e071d4)  
