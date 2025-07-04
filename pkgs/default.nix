@@ -28,4 +28,7 @@
   cat-plymouth = import ./cat-plymouth {
     inherit pkgs lib;
   };
+  houdoku = import ./houdoku {
+    inherit pkgs lib;
+  };
 }
